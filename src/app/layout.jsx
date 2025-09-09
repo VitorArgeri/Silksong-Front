@@ -1,15 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Marcellus } from "next/font/google";
 import "./globals.css";
 
+const marcellus = Marcellus({ 
+  subsets: ["latin"], 
+  weight: "400" 
+});
+
 export const metadata = {
-  title: "Tailwind",
-  description: "Projeto para demonstrar o meu conhecimento em Tailwind CSS",
+  title: "Silksong Project",
+  description: "Projeto Silksong",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="pt-br">
+  <body className={`${marcellus.variable}`}>
         {children}
       </body>
     </html>
