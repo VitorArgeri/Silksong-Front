@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    background: #1a1a1a;
+    color: white;
+    font-family: 'Marcellus', serif;
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid #b6595e;
+}
+
+.text {
+    margin: 0.5rem 0;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.name {
+    color: #b6595e;
+}
