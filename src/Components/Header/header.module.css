@@ -19,8 +19,10 @@
 .line {
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, #9d3648 0%, #fff 100%);
+    background: linear-gradient(90deg, #9d3648 0%, #b6595e 50%, #fff 100%);
+    background-size: 200% 100%;
     margin-top: 8px;
+    animation: colorShift 3s ease-in-out infinite;
 }
 
 .nav {
@@ -46,4 +48,16 @@
 .navItem:hover {
     color: #b6595e;
     transition: color 0.3s ease;
+}
+
+@keyframes colorShift {
+    0% { 
+        background-position: 0% 50%;
+    }
+    50% { 
+        background-position: 100% 50%;
+    }
+    100% { 
+        background-position: 0% 50%;
+    }
 }

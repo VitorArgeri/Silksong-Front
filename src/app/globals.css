@@ -1,3 +1,4 @@
+@import "tailwindcss/preflight";
 @import "tailwindcss";
 
 * {
@@ -5,4 +6,30 @@
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+}
+
+.title {
+  font-family: 'Marcellus', serif;
+  color: white;
+  font-size: 32px;
+  background: none;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: 'Marcellus', serif;
+  color: #d6878b;
+  font-size: 24px;
+  background: none;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Marcellus', serif;
+  color: #ccc;
+  font-size: 16px;
+  margin-top: 8px;
+  background: none;
+  font-weight: bold;
+
 }

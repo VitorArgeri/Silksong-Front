@@ -1,19 +1,38 @@
 .container {
     width: 100%;
-    background: #1a1a1a;
+    background: #141414;
     color: white;
     font-family: 'Marcellus', serif;
     text-align: center;
     padding: 2rem;
     border-top: 2px solid #b6595e;
+    margin-top: 2rem;
 }
 
 .text {
     margin: 0.5rem 0;
     color: #ccc;
     font-size: 0.9rem;
+    background: none;
 }
 
 .name {
     color: #b6595e;
+    animation: colorPulse 3s infinite;
+    background: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: #d6878b;
+    text-decoration: underline;
+    animation-play-state: paused;
+}
+
+@keyframes colorPulse {
+    0% { color: #b6595e; }
+    50% { color: #ff7f7f; }
+    100% { color: #b6595e; }
 }

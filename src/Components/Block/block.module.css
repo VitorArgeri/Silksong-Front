@@ -1,0 +1,16 @@
+.block {
+    background: #141414;
+    border: 2px solid #b6595e;
+    border-radius: 8px;
+    width: 500px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px #b6595e;
+    background-color: #1e1e1e;
+}
