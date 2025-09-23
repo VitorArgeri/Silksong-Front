@@ -1,0 +1,145 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/Img/Contato-Background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: calc(100vh - 200px);
+    flex: 1;
+    padding: 40px 0;
+}
+
+.mainContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.mainContent>* {
+    position: relative;
+    z-index: 2;
+}
+
+.contactInfo {
+    width: 70%;
+    margin-left: 15%;
+    margin: 27px;
+    background: none;
+}
+
+.contactForm {
+    width: 70%;
+    margin-left: 15%;
+    margin: 27px;
+    background: rgba(0, 0, 0, 0.15);
+    border: 2px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+    background: transparent;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: white;
+    background: none;
+}
+
+.input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    resize: none;
+    min-height: 100px;
+    max-height: 150px;
+    width: 100%;
+}
+
+.submitButtonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+}
+
+.submitButton {
+    padding: 0.7rem 1.5rem;
+    background-color: #b6595e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    min-width: 120px;
+    z-index: 3;
+    position: relative;
+}
+
+.submitButton:hover {
+    background-color: #d6878b;
+}
+
+.email {
+    color: #ff7f7f;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background: transparent;
+    font-weight: bold;
+}
+
+.email:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
