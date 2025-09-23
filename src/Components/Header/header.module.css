@@ -36,6 +36,9 @@
     font-size: 2rem;
     margin-left: 2rem;
     align-items: center;
+    color: #b6595e;
+    font-weight: bold;
+    text-shadow: 2px 0px 12px #b6595e;
 }
 
 .navItem {
