@@ -8,7 +8,6 @@ import React, { useState, useEffect } from 'react'
 
 export default function Wiki() {
     const [charactersData, setCharactersData] = useState([])
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchCharacters = async () => {
@@ -26,9 +25,6 @@ export default function Wiki() {
         fetchCharacters();
     }, []);
 
-    if (loading) {
-        return <div className={styles.loading}>Carregando personagens...</div>;
-    }
     return (
         <div className={styles.container}>
             <Header />
