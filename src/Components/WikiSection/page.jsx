@@ -1,3 +1,4 @@
+"use client"
 import styles from './wikiSection.module.css'
 import '@/app/globals.css'
 
