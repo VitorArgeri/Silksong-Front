@@ -128,7 +128,8 @@
 }
 
 .submitButton:hover {
-    background-color: #d6878b;
+    background-color: #e48b8b;
+    color: black;
 }
 
 .email {

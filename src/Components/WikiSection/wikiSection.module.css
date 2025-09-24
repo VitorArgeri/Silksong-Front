@@ -1,0 +1,44 @@
+.container {
+    flex-direction: column;
+}
+
+.charactersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.characterCard {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.characterImageContainer {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.characterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.characterName {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.characterCard:hover {
+    transform: translateY(-5px);
+    background-color: rgb(40, 40, 40);
+}

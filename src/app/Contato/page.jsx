@@ -15,7 +15,7 @@ export default function Contato() {
                     </section>
                     <section className={styles.contactForm}>
                         <h2 className={styles.formTitle}>Formulário de Contato</h2>
-                        <form className={styles.form}>
+                        <form className={styles.form} action="mailto:vitor.argeri@gmail.com" method="post" encType="text/plain">
                             <div className={styles.inputGroup}>
                                 <label htmlFor="name" className={styles.label}>Nome:</label>
                                 <input type="text" id="name" name="name" className={styles.input} maxLength="50" placeholder="Digite seu nome completo" required />
