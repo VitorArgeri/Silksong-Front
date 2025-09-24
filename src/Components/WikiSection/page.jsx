@@ -1,7 +1,7 @@
 import styles from './wikiSection.module.css'
 import '@/app/globals.css'
 
-export default function WikiSection({ title, description, type }) {
+export default function WikiSection({ title, description, type, characters }) {
     return (
         <div className={styles.container}>
             <h2 className='subtitle'>{title}</h2>
