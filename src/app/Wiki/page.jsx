@@ -8,6 +8,7 @@ import React, { useState, useEffect } from 'react'
 
 export default function Wiki() {
     const [charactersData, setCharactersData] = useState([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const fetchCharacters = async () => {
