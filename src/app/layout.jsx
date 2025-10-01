@@ -1,5 +1,6 @@
 import { Marcellus } from "next/font/google";
 import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const marcellus = Marcellus({ 
   subsets: ["latin"], 
