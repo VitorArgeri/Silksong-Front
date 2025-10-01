@@ -12,7 +12,6 @@ export default function page() {
             <Header />
             <div className={styles.heroSection}>
                 <section className={styles.greetings}>
-                    {/* <img src="" alt="" /> */}
                     <h1 className="title">Bem vindo ao Silksong Project!</h1>
                     <p className="subtitle">Saiba mais sobre minha experiência com esta obra-prima</p>
                     <Link href="/Wiki" className={styles.wikiButton}>

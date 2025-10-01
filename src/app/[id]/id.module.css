@@ -1,0 +1,179 @@
+.highlight  {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 7.5vh;
+    font-size: 3rem;
+    background-image: url('/Img/Character-title-background.jpg');
+    background-size: cover;
+    width: 80vw;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 3px solid #9d3648;
+    border-left: 3px solid #9d3648;
+    border-right: 3px solid #9d3648;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.highlight > * {
+    position: relative;
+    z-index: 2;
+}
+
+.mainContent {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.mainContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+}
+
+.mainContent > * {
+    position: relative;
+    z-index: 2;
+}
+
+.characterSection {
+    margin-top: 0vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: 3px solid #9d3648;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem;
+    color: white;
+}
+
+.ImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.characterImage {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 3px solid #b6595e;
+    object-fit: cover;
+}
+
+.division {
+    height: 60vh;
+    margin-left: 2vw;
+    width: 3px;
+    background-color: #9d3648;
+}
+
+.textContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    bottom: 6vh;
+}
+
+.characterBlock {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.characterTopic {
+    font-weight: bold;
+    color: #b6595e;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.characterItem {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(40, 38, 38);
+    width: 40vw;
+    padding: 0.1rem;
+}
+
+.characterCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 10vw;
+    text-align: center;
+    border: 2px solid #9d3648;
+    height: 12.5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card>* {
+    position: relative;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
