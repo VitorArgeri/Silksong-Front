@@ -10,3 +10,9 @@
     font-size: 1.2rem;
     color: white;
 }
+
+.heroSection {
+    flex-direction: column;
+    width: 92.5%;
+    margin-left: 3.75%;
+}

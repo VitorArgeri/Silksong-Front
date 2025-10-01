@@ -16,6 +16,9 @@ export default function WikiSection({ title, description, type, characters }) {
                                     <img src={character.image} alt={character.name} className={styles.characterImage} />
                                 </div>
                                 <p className={styles.characterName}>{character.name}</p>
+                                <p className={styles.characterType}>{character.type}</p>
+                                <p className={styles.characterLocation}>{character.Location}</p>
+                                <p className={styles.characterDescription}>{character.description}</p>
                             </div>
                         )
                     }
