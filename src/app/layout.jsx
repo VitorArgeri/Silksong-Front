@@ -1,6 +1,5 @@
 import { Marcellus } from "next/font/google";
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const marcellus = Marcellus({ 
   subsets: ["latin"], 
@@ -10,6 +9,9 @@ const marcellus = Marcellus({
 export const metadata = {
   title: "Silksong Project",
   description: "Projeto Silksong",
+  icons: {
+    icon: "/Icons/silksong-icon.png"
+  }
 };
 
 export default function RootLayout({ children }) {
