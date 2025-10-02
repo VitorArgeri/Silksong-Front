@@ -10,7 +10,7 @@ export default function Sobre() {
             <Header />
             <main className={styles.mainContent}>
                 <section className={styles.section}>
-                    <h1 className='title'>Sobre Nós</h1>
+                    <h1 className='title'>Sobre o Projeto</h1>
                     <p className='description'>O SilksongProject tem como objetivo principal o compartilhamento da experiência que eu, Vitor Argeri, tive ao longo do tempo com o jogo Hollow knight: Silksong, um jogo que esperei lançar por mais de 6 anos e que finalmente está entre nós.</p>
                 </section>
                 <section className={styles.section}>
