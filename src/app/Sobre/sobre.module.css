@@ -27,10 +27,27 @@
     z-index: 2;
 }
 
-.heroSection {
+.section {
     width: 70%;
     margin-left: 15%;
     margin: 27px;
     background: none;
+}
+
+@media screen and (max-width: 968px) {
+    .section {
+        width: 90%;
+        margin-left: 5%;
+        margin: 10px 0;
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+    .section {
+        width: 90%;
+        margin-left: 5%;
+        margin: 10px 0;
+    }
 }
 

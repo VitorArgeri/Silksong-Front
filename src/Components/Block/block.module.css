@@ -2,7 +2,7 @@
     background: #141414;
     border: 2px solid #b6595e;
     border-radius: 8px;
-    width: 500px;
+    width: 40vw;
     font-weight: bold;
     padding: 20px;
     text-align: left;
@@ -13,4 +13,11 @@
     transform: scale(1.04);
     box-shadow: 0 0 10px #b6595e;
     background-color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 90vw;
+        margin: 10px 0;
+    }
 }

@@ -1,7 +1,15 @@
+"use client"
 import React from 'react'
 import styles from './header.module.css'
+import { useState } from 'react';
 
 export default function Header() {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
     return (
         <div className={styles.container}>
             <div className={styles.header}>
