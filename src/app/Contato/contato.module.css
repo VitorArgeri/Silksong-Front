@@ -36,8 +36,7 @@
 }
 
 .contactInfo {
-    width: 70%;
-    margin-left: 15%;
+    text-align: center;    
     margin: 27px;
     background: none;
 }
